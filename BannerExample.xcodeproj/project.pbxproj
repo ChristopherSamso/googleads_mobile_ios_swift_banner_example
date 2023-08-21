@@ -93,7 +93,6 @@
 				585F78D02D887C27C3DD0205 /* Pods-BannerExample.debug.xcconfig */,
 				22A3C77BB1188E797879E083 /* Pods-BannerExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

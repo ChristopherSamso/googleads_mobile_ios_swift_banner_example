@@ -19,18 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpA-oj-RQs" customClass="GADBannerView">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpA-oj-RQs" customClass="GAMBannerView">
                                 <rect key="frame" x="0.0" y="231" width="375" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="HpA-oj-RQs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KfF-k0-cvk"/>
-                            <constraint firstItem="3Le-Kg-LNi" firstAttribute="top" secondItem="HpA-oj-RQs" secondAttribute="bottom" constant="197" id="Yg2-7K-iqM"/>
-                            <constraint firstItem="HpA-oj-RQs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wNs-KI-9MW"/>
-                            <constraint firstItem="HpA-oj-RQs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wW5-5H-LAd"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="HpA-oj-RQs" id="fFs-Wi-V7a"/>

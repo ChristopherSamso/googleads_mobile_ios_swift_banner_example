@@ -20,7 +20,7 @@ import UIKit
 class ViewController: UIViewController {
 
   /// The banner view.
-  @IBOutlet var bannerView: GADBannerView!
+  @IBOutlet var bannerView: GAMBannerView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     frameRect.size.width = view.bounds.width
     frameRect.size.height = 250.0
     bannerView.frame = frameRect
-    bannerView.adUnitID = "/6499/example/APIDemo/Fluid"
+    bannerView.adUnitID = "/701/iphone.wp.test"
     bannerView.rootViewController = self
-    bannerView.adSize = GADAdSizeFluid
-    bannerView.load(GADRequest())
+    bannerView.validAdSizes = [NSValueFromGADAdSize(GADAdSizeMediumRectangle), NSValueFromGADAdSize(GADAdSizeFluid)]
+    bannerView.load(GAMRequest())
   }
 
 }
